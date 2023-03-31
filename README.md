@@ -20,3 +20,9 @@ cd CattleStorm
 python3 CattleStorm.py -u <beef-user> -p <beef-password> --url <beef-url> -m <module id/classname/name> -mp <module parameters>
 ```
 ![sample execution](example.png)
+
+# Special feature(s)
+This script parses the Raw JavaScript module differently. Instead of putting the JavaScript in the command, you can just write it to a file and then run the following command to execute it:
+```
+python3 CattleStorm.py -u <beef-user> -p <beef-password> --url <beef-url> -m "Raw JavaScript" -mp "cmd=path/to/script.js"
+```
